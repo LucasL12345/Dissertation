@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A03880442996A2E500365541 /* DissertationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03880432996A2E500365541 /* DissertationApp.swift */; };
-		A03880462996A2E500365541 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03880452996A2E500365541 /* ContentView.swift */; };
+		A03880442996A2E500365541 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03880432996A2E500365541 /* AppDelegate.swift */; };
 		A03880482996A2E600365541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03880472996A2E600365541 /* Assets.xcassets */; };
 		A038804B2996A2E600365541 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A038804A2996A2E600365541 /* Preview Assets.xcassets */; };
-		A03880552996A2E600365541 /* DissertationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03880542996A2E600365541 /* DissertationTests.swift */; };
-		A038805F2996A2E600365541 /* DissertationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038805E2996A2E600365541 /* DissertationUITests.swift */; };
-		A03880612996A2E600365541 /* DissertationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03880602996A2E600365541 /* DissertationUITestsLaunchTests.swift */; };
+		A038806E2996A5F900365541 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038806D2996A5F900365541 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,15 +32,12 @@
 
 /* Begin PBXFileReference section */
 		A03880402996A2E500365541 /* Dissertation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dissertation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A03880432996A2E500365541 /* DissertationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DissertationApp.swift; sourceTree = "<group>"; };
-		A03880452996A2E500365541 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A03880432996A2E500365541 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A03880472996A2E600365541 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A038804A2996A2E600365541 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A03880502996A2E600365541 /* DissertationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DissertationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A03880542996A2E600365541 /* DissertationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DissertationTests.swift; sourceTree = "<group>"; };
 		A038805A2996A2E600365541 /* DissertationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DissertationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A038805E2996A2E600365541 /* DissertationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DissertationUITests.swift; sourceTree = "<group>"; };
-		A03880602996A2E600365541 /* DissertationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DissertationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A038806D2996A5F900365541 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				A03880422996A2E500365541 /* Dissertation */,
-				A03880532996A2E600365541 /* DissertationTests */,
-				A038805D2996A2E600365541 /* DissertationUITests */,
 				A03880412996A2E500365541 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,8 +86,8 @@
 		A03880422996A2E500365541 /* Dissertation */ = {
 			isa = PBXGroup;
 			children = (
-				A03880432996A2E500365541 /* DissertationApp.swift */,
-				A03880452996A2E500365541 /* ContentView.swift */,
+				A03880432996A2E500365541 /* AppDelegate.swift */,
+				A038806D2996A5F900365541 /* ViewController.swift */,
 				A03880472996A2E600365541 /* Assets.xcassets */,
 				A03880492996A2E600365541 /* Preview Content */,
 			);
@@ -108,23 +100,6 @@
 				A038804A2996A2E600365541 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		A03880532996A2E600365541 /* DissertationTests */ = {
-			isa = PBXGroup;
-			children = (
-				A03880542996A2E600365541 /* DissertationTests.swift */,
-			);
-			path = DissertationTests;
-			sourceTree = "<group>";
-		};
-		A038805D2996A2E600365541 /* DissertationUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A038805E2996A2E600365541 /* DissertationUITests.swift */,
-				A03880602996A2E600365541 /* DissertationUITestsLaunchTests.swift */,
-			);
-			path = DissertationUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A03880462996A2E500365541 /* ContentView.swift in Sources */,
-				A03880442996A2E500365541 /* DissertationApp.swift in Sources */,
+				A038806E2996A5F900365541 /* ViewController.swift in Sources */,
+				A03880442996A2E500365541 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A03880552996A2E600365541 /* DissertationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +248,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A038805F2996A2E600365541 /* DissertationUITests.swift in Sources */,
-				A03880612996A2E600365541 /* DissertationUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +397,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +427,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
