@@ -11,6 +11,7 @@
 		A03880482996A2E600365541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03880472996A2E600365541 /* Assets.xcassets */; };
 		A038804B2996A2E600365541 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A038804A2996A2E600365541 /* Preview Assets.xcassets */; };
 		A038806E2996A5F900365541 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038806D2996A5F900365541 /* ViewController.swift */; };
+		A03880702996AA9B00365541 /* VisionObjectRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038806F2996AA9B00365541 /* VisionObjectRecognitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		A03880502996A2E600365541 /* DissertationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DissertationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A038805A2996A2E600365541 /* DissertationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DissertationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A038806D2996A5F900365541 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A038806F2996AA9B00365541 /* VisionObjectRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionObjectRecognitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				A03880432996A2E500365541 /* AppDelegate.swift */,
 				A038806D2996A5F900365541 /* ViewController.swift */,
+				A038806F2996AA9B00365541 /* VisionObjectRecognitionViewController.swift */,
 				A03880472996A2E600365541 /* Assets.xcassets */,
 				A03880492996A2E600365541 /* Preview Content */,
 			);
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03880702996AA9B00365541 /* VisionObjectRecognitionViewController.swift in Sources */,
 				A038806E2996A5F900365541 /* ViewController.swift in Sources */,
 				A03880442996A2E500365541 /* AppDelegate.swift in Sources */,
 			);
@@ -397,7 +401,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -427,7 +431,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
