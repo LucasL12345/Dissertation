@@ -98,14 +98,32 @@ class VisionObjectRecognitionViewController: ViewController {
      
     
     func createTextSubLayerInBounds(_ bounds: CGRect, identifier: String, confidence: VNConfidence) -> CATextLayer {
-        //TODO
+        let textLayer = CATextLayer()
+        textLayer.name = "Object Label"
+        let formattedString = NSMutableAttributedString(string: String(format: "\(identifier)\nConfidence:  %.2f", confidence))
+        let largeFont = UIFont(name: "Helvetica", size: 24.0)!
+        formattedString.addAttributes([NSAttributedString.Key.font: largeFont], range: NSRange(location: 0, length: identifier.count))
+        textLayer.string = formattedString
+        textLayer.bounds = CGRect(x: 0, y: 0, width: bounds.size.height - 10, height: bounds.size.width - 10)
+        textLayer.position = CGPoint(x: bounds.midX, y: bounds.midY)
+        textLayer.shadowOpacity = 0.5
+        textLayer.shadowOffset = CGSize(width: 2, height: 2)
+        textLayer.foregroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 1.0, 1.0])
+        textLayer.contentsScale = 2.0
+        // rotate layer into screen orientation, scale and mirror
+        textLayer.setAffineTransform(CGAffineTransform(rotationAngle: CGFloat(.pi / 2.0)).scaledBy(x: 1.0, y: -1.0))
         return textLayer
     }
-     
-     func createRoundedRectLayerWithBounds(_ bounds: CGRect) -> CALayer {
-         //TODO
-         return shapeLayer
-     }
+    
+    func createRoundedRectLayerWithBounds(_ bounds: CGRect) -> CALayer {
+        let shapeLayer = CALayer()
+        shapeLayer.bounds = bounds
+        shapeLayer.position = CGPoint(x: bounds.midX, y: bounds.midY)
+        shapeLayer.name = "Found Object"
+        shapeLayer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 1.0, 0.2])
+        shapeLayer.cornerRadius = 7
+        return shapeLayer
+    }
 
     
 
