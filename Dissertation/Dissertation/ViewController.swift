@@ -15,11 +15,19 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
     private let videoDataOutputQueue = DispatchQueue(label: "VideoDataOutput", qos: .userInitiated, attributes: [], autoreleaseFrequency: .workItem)
     
+    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        // to be implemented in the subclass
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAVCapture()
 
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 
     
@@ -84,6 +92,10 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     func teardownAVCapture() {
         previewLayer.removeFromSuperlayer()
         previewLayer = nil
+    }
+    
+    func captureOutput(_ captureOutput: AVCaptureOutput, didDrop didDropSampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        // print("frame dropped")
     }
     
     

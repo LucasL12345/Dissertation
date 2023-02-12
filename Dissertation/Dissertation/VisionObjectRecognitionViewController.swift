@@ -61,6 +61,32 @@ class VisionObjectRecognitionViewController: ViewController {
         CATransaction.commit()
     }
     
+    override func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+            return
+        }
+        
+        let imageRequestHandler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:])
+        do {
+            try imageRequestHandler.perform(self.requests)
+        } catch {
+            print(error)
+        }
+    }
+    
+    override func setupAVCapture() {
+        super.setupAVCapture()
+        
+        // setup Vision parts
+        setupLayers()
+        updateLayerGeometry()
+        setupVision()
+        
+        // start the capture
+        startCaptureSession()
+    }
+    
+    
     func setupLayers() {
          detectionOverlay = CALayer() // container layer that has all the renderings of the observations
          detectionOverlay.name = "DetectionOverlay"
